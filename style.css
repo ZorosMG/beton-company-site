@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -49,8 +50,10 @@ section {
 
 .advantages .grid {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-top: 20px;
+
 }
 
 .advantages .card {
@@ -68,4 +71,11 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+}
+
+@media (min-width: 550px) {
+
+ .advantages .grid {
+    flex-direction: row;
+ }
 }
